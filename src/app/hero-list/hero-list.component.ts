@@ -7,7 +7,7 @@ import {DbService} from '../db.service';
   template: `
     <h2>Students</h2>
     <ul>
-      <li *ngFor="let student of students"><a href="/profile/{{student.id}}">{{student.name}}</a></li>
+      <li *ngFor="let student of students"><a [routerLink]="['/profile', student.id]">{{student.name}}</a></li>
     </ul>
     
   `

@@ -4,8 +4,8 @@
 
 <h1>Angular Router</h1>
 <nav>
-  <a routerLink="/" routerLinkActive="active">Home Page</a>
-  <a routerLink="/students" routerLinkActive="active">Students</a>
+  <a [routerLink]="['']" routerLinkActive="active">Home Page</a>
+  <a [routerLink]="['students']" routerLinkActive="active">Students</a>
 </nav>
 
 <router-outlet></router-outlet>
